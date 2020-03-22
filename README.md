@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/irojasag/payment-tracker.svg?branch=master)](https://travis-ci.com/irojasag/payment-tracker)
+
 # PaymentTracker
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
