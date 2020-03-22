@@ -8,7 +8,6 @@
     "build:prod": "ng build --prod",
     "test": "ng test",
     "test:server": "ng test --watch=false --code-coverage --browsers=ChromeHeadless",
-    "test:server:circleci": "CHROME_BIN=/usr/bin/google-chrome ng test --watch=false --code-coverage --browsers=ChromeHeadless",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -56,12 +55,13 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "~3.5.3"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && ng lint && ng test",
-      "pre-push": "ng build --aot true"
+      "pre-commit": "pretty-quick --staged && npm run lint && npm run test:server",
+      "pre-push": "npm run build:prod"
     }
   }
 }
