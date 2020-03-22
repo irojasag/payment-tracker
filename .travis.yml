@@ -23,5 +23,5 @@ script:
   - npm run build:prod
 
 after_success:
-  - firebase use $FIREBASE_ENVIRONMENT
+  - firebase use $FIREBASE_ENVIRONMENT --token "$FIREBASE_TOKEN"
   - firebase deploy --token "$FIREBASE_TOKEN"
