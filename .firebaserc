@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "development": "solo-payment-tracker",
+    "production": "solo-payment-tracker-2d2a9"
+  }
+}
