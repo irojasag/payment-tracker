@@ -3,8 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
-};
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyC_Bm8GMtNBONN-SA-p_uhvJLqb8JAA7uA',
+    authDomain: 'solo-payment-tracker.firebaseapp.com',
+    databaseURL: 'https://solo-payment-tracker.firebaseio.com',
+    projectId: 'solo-payment-tracker',
+    storageBucket: 'solo-payment-tracker.appspot.com',
+    messagingSenderId: '5183340571',
+    appId: '1:5183340571:web:ab1f7513281450111778be',
+    measurementId: 'G-MKVKXZKJ03',
+  },
+}
 
 /*
  * For easier debugging in development mode, you can import the following file
